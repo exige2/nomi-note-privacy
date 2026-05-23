@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>プライバシーポリシー | NomiNote Privacy Policy</title>
+  <style>
+    :root {
+      --primary: #d97706;
+      --primary-light: #fef3c7;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --bg: #ffffff;
+      --section-bg: #f9fafb;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP",
+                   "Hiragino Sans", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+      font-size: 15px;
+    }
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 32px 20px;
+      text-align: center;
+    }
+    header h1 { font-size: 1.6rem; font-weight: 700; }
+    header p  { margin-top: 6px; opacity: 0.85; font-size: 0.9rem; }
+    .lang-switch {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      padding: 12px;
+      background: var(--primary-light);
+      font-size: 0.85rem;
+    }
+    .lang-switch button {
+      padding: 4px 16px;
+      border: 1px solid var(--primary);
+      border-radius: 20px;
+      background: transparent;
+      color: var(--primary);
+      cursor: pointer;
+      font-weight: 600;
+    }
+    .lang-switch button.active {
+      background: var(--primary);
+      color: #fff;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 32px 20px 64px;
+    }
+    .updated {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-bottom: 28px;
+    }
+    section {
+      margin-bottom: 36px;
+    }
+    h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--primary);
+      border-left: 4px solid var(--primary);
+      padding-left: 12px;
+      margin-bottom: 12px;
+    }
+    p { margin-bottom: 10px; }
+    ul {
+      padding-left: 20px;
+      margin-bottom: 10px;
+    }
+    li { margin-bottom: 6px; }
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+    }
+    .data-table th {
+      background: var(--section-bg);
+      border: 1px solid var(--border);
+      padding: 8px 12px;
+      text-align: left;
+      font-weight: 600;
+    }
+    .data-table td {
+      border: 1px solid var(--border);
+      padding: 8px 12px;
+      vertical-align: top;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--primary-light);
+      color: var(--primary);
+      border-radius: 4px;
+      padding: 1px 6px;
+      font-size: 0.78rem;
+      font-weight: 600;
+    }
+    .contact-box {
+      background: var(--section-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px 20px;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--muted);
+      padding: 20px;
+      border-top: 1px solid var(--border);
+    }
+
+    /* language toggle */
+    [data-lang="en"] { display: none; }
+    body.en [data-lang="ja"] { display: none; }
+    body.en [data-lang="en"] { display: block; }
+    body.en .lang-switch button[data-target="en"] { background: var(--primary); color: #fff; }
+    body.en .lang-switch button[data-target="ja"] { background: transparent; color: var(--primary); }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.3rem; }
+      .data-table { font-size: 0.82rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🍺 NomiNote</h1>
+  <p>プライバシーポリシー &nbsp;|&nbsp; Privacy Policy</p>
+</header>
+
+<div class="lang-switch">
+  <button class="active" data-target="ja" onclick="setLang('ja')">日本語</button>
+  <button data-target="en" onclick="setLang('en')">English</button>
+</div>
+
+<!-- ══════════════════════════ JAPANESE ══════════════════════════ -->
+<div data-lang="ja">
+<div class="container">
+  <p class="updated">最終更新日：2024年1月1日</p>
+
+  <section>
+    <p>
+      NomiNote（以下「本アプリ」）は、お酒の記録・共有を目的としたサービスです。
+      本プライバシーポリシーは、本アプリが収集・利用する情報の取り扱いについて説明するものです。
+      本アプリをご利用いただくことで、本ポリシーに同意したものとみなします。
+    </p>
+  </section>
+
+  <section>
+    <h2>第1条　収集する情報</h2>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>情報の種類</th>
+          <th>収集方法</th>
+          <th>利用目的</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="badge">アカウント情報</span><br>メールアドレス、表示名、プロフィール写真</td>
+          <td>会員登録・ソーシャルログイン時</td>
+          <td>プロフィール表示、認証</td>
+        </tr>
+        <tr>
+          <td><span class="badge">位置情報</span><br>緯度・経度（おおよその現在地）</td>
+          <td>周辺検索時（許可した場合のみ）</td>
+          <td>近隣のお店を地図上に表示するため</td>
+        </tr>
+        <tr>
+          <td><span class="badge">投稿データ</span><br>飲酒記録、店舗名、評価、タグ、コメント</td>
+          <td>投稿操作時</td>
+          <td>サービス提供、地図上への表示</td>
+        </tr>
+        <tr>
+          <td><span class="badge">写真・画像</span><br>お酒・料理の写真</td>
+          <td>写真選択・撮影時（許可した場合のみ）</td>
+          <td>投稿への添付、サムネイル生成</td>
+        </tr>
+        <tr>
+          <td><span class="badge">利用データ</span><br>アクセス日時、使用端末情報、クラッシュ情報</td>
+          <td>アプリ使用中に自動収集</td>
+          <td>品質改善、バグ修正</td>
+        </tr>
+        <tr>
+          <td><span class="badge">課金情報</span><br>購入履歴（プレミアムプラン）</td>
+          <td>アプリ内購入時</td>
+          <td>プレミアム機能の提供</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>パスワード・クレジットカード番号などの決済情報は収集・保存しません。</p>
+  </section>
+
+  <section>
+    <h2>第2条　情報の利用目的</h2>
+    <ul>
+      <li>本サービスの提供・運営・改善</li>
+      <li>ユーザー認証およびアカウント管理</li>
+      <li>飲酒ログの記録・共有機能の提供</li>
+      <li>周辺お店の検索・地図表示</li>
+      <li>プレミアム機能の提供と管理</li>
+      <li>不正利用・違反コンテンツの検出と対処</li>
+      <li>お問い合わせへの対応</li>
+      <li>利用規約への違反行為への対応</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>第3条　第三者サービスへの情報提供</h2>
+    <p>本アプリは以下の第三者サービスを利用しており、各サービスのプライバシーポリシーに従い情報が処理される場合があります。</p>
+    <table class="data-table">
+      <thead>
+        <tr><th>サービス</th><th>提供者</th><th>利用目的</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Firebase Authentication</td>
+          <td>Google LLC</td>
+          <td>ユーザー認証</td>
+        </tr>
+        <tr>
+          <td>Cloud Firestore</td>
+          <td>Google LLC</td>
+          <td>データ保存・同期</td>
+        </tr>
+        <tr>
+          <td>Firebase Storage</td>
+          <td>Google LLC</td>
+          <td>画像ファイルの保存</td>
+        </tr>
+        <tr>
+          <td>Google AdMob</td>
+          <td>Google LLC</td>
+          <td>広告配信（無料版ユーザーのみ）</td>
+        </tr>
+        <tr>
+          <td>Google Sign-In / Sign in with Apple</td>
+          <td>Google LLC / Apple Inc.</td>
+          <td>ソーシャルログイン</td>
+        </tr>
+        <tr>
+          <td>OpenStreetMap / Nominatim</td>
+          <td>OpenStreetMap Foundation</td>
+          <td>地図表示・住所検索</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>上記以外の第三者に個人情報を販売・提供することはありません。ただし、法令により開示が義務付けられている場合を除きます。</p>
+  </section>
+
+  <section>
+    <h2>第4条　広告について</h2>
+    <p>
+      無料版ユーザーには、Google AdMob を通じたバナー広告が表示されます。
+      AdMob はデバイス情報・広告 ID を使用してパーソナライズ広告を配信する場合があります。
+      詳細は <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google プライバシーポリシー</a> をご確認ください。
+    </p>
+    <p>
+      プレミアムプランをご購入いただくと、すべての広告が非表示になります。
+    </p>
+  </section>
+
+  <section>
+    <h2>第5条　アプリ内購入</h2>
+    <p>
+      本アプリはプレミアムプラン（広告削除）のアプリ内購入を提供しています。
+      決済処理は Apple App Store（iOS）または Google Play（Android）が行います。
+      当方はカード番号などの決済情報にアクセスしません。
+      購入履歴（プレミアム取得の事実）のみを Firestore に記録します。
+    </p>
+  </section>
+
+  <section>
+    <h2>第6条　データの保管と保護</h2>
+    <ul>
+      <li>データは Google Cloud（Firebase）の日本またはアジア太平洋リージョンに保管されます。</li>
+      <li>通信は HTTPS/TLS により暗号化されます。</li>
+      <li>Firebase Security Rules によりアクセス制御を行っています。</li>
+      <li>自分の投稿のみ編集・削除が可能です。</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>第7条　データの保持と削除</h2>
+    <p>
+      アカウントを削除した場合、投稿データおよびプロフィール情報は30日以内に削除されます。
+      削除のご要望は下記お問い合わせ先へご連絡ください。
+    </p>
+  </section>
+
+  <section>
+    <h2>第8条　お子様のプライバシー</h2>
+    <p>
+      本アプリは20歳以上の方を対象としています。
+      意図せず未成年者のデータを収集した場合は速やかに削除します。
+    </p>
+  </section>
+
+  <section>
+    <h2>第9条　ユーザーの権利</h2>
+    <ul>
+      <li><strong>アクセス権：</strong>ご自身のデータを確認する権利があります。</li>
+      <li><strong>訂正権：</strong>アプリ内の設定から表示名等を変更できます。</li>
+      <li><strong>削除権：</strong>アカウントおよびデータの削除をリクエストできます。</li>
+      <li><strong>データ移行：</strong>ご希望の場合はデータのエクスポートを提供します。</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>第10条　プライバシーポリシーの変更</h2>
+    <p>
+      本ポリシーは予告なく変更される場合があります。
+      重要な変更を行う際はアプリ内でお知らせします。
+      変更後も本アプリを継続してご利用いただいた場合、改定後のポリシーに同意したものとみなします。
+    </p>
+  </section>
+
+  <section>
+    <h2>第11条　お問い合わせ</h2>
+    <div class="contact-box">
+      <p>本プライバシーポリシーに関するご質問・データ削除依頼は以下へご連絡ください：</p>
+      <p><strong>メールアドレス：</strong> support@nomi-note.example.com</p>
+      <p><strong>受付時間：</strong> 平日 10:00〜18:00（日本時間）</p>
+    </div>
+  </section>
+</div>
+</div><!-- /ja -->
+
+<!-- ══════════════════════════ ENGLISH ══════════════════════════ -->
+<div data-lang="en">
+<div class="container">
+  <p class="updated">Last updated: January 1, 2024</p>
+
+  <section>
+    <p>
+      NomiNote (the "App") is a service for recording and sharing your drinking experiences.
+      This Privacy Policy explains how we collect, use, and protect your information.
+      By using the App, you agree to this policy.
+    </p>
+  </section>
+
+  <section>
+    <h2>1. Information We Collect</h2>
+    <table class="data-table">
+      <thead>
+        <tr><th>Type</th><th>How Collected</th><th>Purpose</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="badge">Account Info</span><br>Email, display name, profile photo</td>
+          <td>During registration or social login</td>
+          <td>Authentication and profile display</td>
+        </tr>
+        <tr>
+          <td><span class="badge">Location</span><br>Latitude / longitude (approximate)</td>
+          <td>When searching nearby (only with permission)</td>
+          <td>Show nearby venues on map</td>
+        </tr>
+        <tr>
+          <td><span class="badge">Post Data</span><br>Drink logs, venue names, ratings, tags, comments</td>
+          <td>When you create a post</td>
+          <td>Providing core service features</td>
+        </tr>
+        <tr>
+          <td><span class="badge">Photos / Images</span><br>Food and drink photos</td>
+          <td>When you select or capture photos (only with permission)</td>
+          <td>Attaching to posts, thumbnail generation</td>
+        </tr>
+        <tr>
+          <td><span class="badge">Usage Data</span><br>Access timestamps, device info, crash reports</td>
+          <td>Automatically during app use</td>
+          <td>Quality improvement, bug fixes</td>
+        </tr>
+        <tr>
+          <td><span class="badge">Purchase History</span><br>Premium plan purchase record</td>
+          <td>When an in-app purchase is made</td>
+          <td>Providing premium features</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>We do NOT collect passwords, credit card numbers, or other payment credentials.</p>
+  </section>
+
+  <section>
+    <h2>2. How We Use Your Information</h2>
+    <ul>
+      <li>Providing, operating, and improving the service</li>
+      <li>User authentication and account management</li>
+      <li>Delivering drink log recording and sharing features</li>
+      <li>Venue search and map display</li>
+      <li>Providing and managing premium features</li>
+      <li>Detecting and addressing abuse and policy violations</li>
+      <li>Responding to support inquiries</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>3. Third-Party Services</h2>
+    <p>The App uses the following third-party services, each governed by their own privacy policies:</p>
+    <table class="data-table">
+      <thead>
+        <tr><th>Service</th><th>Provider</th><th>Purpose</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Firebase Authentication</td><td>Google LLC</td><td>User authentication</td></tr>
+        <tr><td>Cloud Firestore</td><td>Google LLC</td><td>Data storage and sync</td></tr>
+        <tr><td>Firebase Storage</td><td>Google LLC</td><td>Image file storage</td></tr>
+        <tr><td>Google AdMob</td><td>Google LLC</td><td>Advertising (free users only)</td></tr>
+        <tr><td>Google Sign-In / Sign in with Apple</td><td>Google LLC / Apple Inc.</td><td>Social login</td></tr>
+        <tr><td>OpenStreetMap / Nominatim</td><td>OpenStreetMap Foundation</td><td>Maps and address search</td></tr>
+      </tbody>
+    </table>
+    <p>We do not sell or share your personal information with any other third parties, except as required by law.</p>
+  </section>
+
+  <section>
+    <h2>4. Advertising</h2>
+    <p>
+      Free-tier users will see banner ads served via Google AdMob.
+      AdMob may use device information and advertising IDs to serve personalized ads.
+      See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a> for details.
+    </p>
+    <p>Purchasing the Premium plan removes all ads from the App.</p>
+  </section>
+
+  <section>
+    <h2>5. In-App Purchases</h2>
+    <p>
+      The App offers a one-time Premium plan purchase (ad removal) processed through the
+      Apple App Store (iOS) or Google Play (Android). We never receive or store your
+      payment details. Only the fact that a purchase was made is recorded in Firestore.
+    </p>
+  </section>
+
+  <section>
+    <h2>6. Data Storage and Security</h2>
+    <ul>
+      <li>Data is stored on Google Cloud (Firebase) in Japan or the Asia-Pacific region.</li>
+      <li>All communications are encrypted via HTTPS/TLS.</li>
+      <li>Access is controlled by Firebase Security Rules.</li>
+      <li>Only you can edit or delete your own posts.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>7. Data Retention and Deletion</h2>
+    <p>
+      If you delete your account, your posts and profile data will be removed within 30 days.
+      To request deletion, please contact us at the address below.
+    </p>
+  </section>
+
+  <section>
+    <h2>8. Children's Privacy</h2>
+    <p>
+      This App is intended for users aged 20 and over.
+      If we discover we have inadvertently collected data from a minor, we will delete it promptly.
+    </p>
+  </section>
+
+  <section>
+    <h2>9. Your Rights</h2>
+    <ul>
+      <li><strong>Access:</strong> You have the right to access your data.</li>
+      <li><strong>Correction:</strong> You can update your display name and other info in Settings.</li>
+      <li><strong>Deletion:</strong> You can request deletion of your account and data.</li>
+      <li><strong>Portability:</strong> We can provide a data export upon request.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>10. Changes to This Policy</h2>
+    <p>
+      We may update this policy at any time. We will notify you of significant changes within the App.
+      Continued use of the App after changes are posted constitutes acceptance of the updated policy.
+    </p>
+  </section>
+
+  <section>
+    <h2>11. Contact</h2>
+    <div class="contact-box">
+      <p>For questions about this Privacy Policy or to request data deletion:</p>
+      <p><strong>Email:</strong> support@nomi-note.example.com</p>
+      <p><strong>Response hours:</strong> Weekdays 10:00–18:00 JST</p>
+    </div>
+  </section>
+</div>
+</div><!-- /en -->
+
+<footer>
+  &copy; 2024 NomiNote. All rights reserved.
+</footer>
+
+<script>
+  function setLang(lang) {
+    document.body.className = lang === 'en' ? 'en' : '';
+    document.querySelectorAll('.lang-switch button').forEach(function(btn) {
+      btn.classList.toggle('active', btn.dataset.target === lang);
+    });
+  }
+  // Auto-detect browser language
+  if (navigator.language && navigator.language.startsWith('en')) {
+    setLang('en');
+  }
+</script>
+</body>
+</html>
